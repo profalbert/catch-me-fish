@@ -1,0 +1,109 @@
+.FooterMobile {
+  padding: 40px 0px;
+  background-color: var(--dark-2);
+  display: none;
+}
+.footerMobileWrap {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-auto-flow: column;
+}
+
+
+.FMLogoBlock {
+  width: 91px;
+}
+.FMLogoBlock img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+.FMContactsBlock div a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.FMContactsBlock div {
+  margin-bottom: 20px;
+}
+.FMContactsBlock div:last-child {
+  margin-bottom: 0px;
+}
+
+
+.FMGroupVKBlock {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.FMGroupVKBlockText a {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--light-2);
+}
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+
+}
+@media(max-width: 991px) {
+  .FooterMobile {
+    display: block;
+  }
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 575px) {
+
+}
+@media(max-width: 375px) { /*дополнительный адаптив (чтобы не портить красоту) */
+  .footerMobileWrap {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: "logo phones"
+                         "vk vk";
+  }
+  .FMLogoBlock {
+    grid-area: logo;
+  }
+  .FMContactsBlock {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+  }
+  .FMContactsBlockWrap {
+    grid-area: phones;
+  }
+  .FMGroupVKBlockWrap {
+    grid-area: vk;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

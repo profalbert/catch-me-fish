@@ -1,0 +1,212 @@
+.CBBlockWrap {
+  height: 100vh;
+  width: 100%;
+  z-index: -30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  opacity: 0;
+  align-items: center;
+  justify-items: center;
+}
+.CBBlockWrap::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-2);
+  opacity: .8;
+  z-index: 31;
+}
+.CBBlockWrapOpen {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  z-index: 30;
+}
+.CBBlockWrapClose {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -30;
+}
+.CBBlockContentWrap {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.CBBlock {
+  background-color: var(--white);
+  max-width: 610px;
+  border-radius: 5px;
+  padding: 30px 85px;
+  position: relative;
+  z-index: -32;
+  border: 1px solid var(--dark-2);
+  opacity: 0;
+}
+.CBBlockOpen {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  z-index: 32;
+}
+.CBBlockClose {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -32;
+}
+
+.CBForm {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.CBBlockCloseWrap {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.CBBlockCloseButton {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.CBFormTitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  max-width: 315px;
+  text-align: center;
+}
+
+
+.CBFormMainFieldBlockWrap {
+  margin-top: 20px;
+  width: 100%;
+}
+.CBFormMainField {
+  background-color: transparent;
+  padding: 0px;
+  padding: 0px 22px;
+  border-radius: 3px;
+  height: 47px;
+  border: solid 1px var(--darkest-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--darkest-2);
+}
+.CBFormMainField::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--darkest-2);
+}
+.CBFormMainFieldCallBackText {
+  padding: 22px;
+  height: 140px;
+}
+.CBFormMainFieldBlock {
+  display: grid;
+  grid-gap: 18px;
+}
+
+
+.CBFormChekcboxBlockWrap {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+  max-width: 100%;
+  height: max-content;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.CBFormChekcboxBlock {
+  margin-left: -11px;
+}
+.CBFormChekcboxText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+}
+
+
+.CBFormButtonsBlockWrap {
+  display: grid;
+}
+.CBFormButtonsBlock {
+  display: grid;
+  grid-auto-flow: column;
+}
+.CBFormButtonContinue {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.errorForm {
+  border-color: var(--error-dark);
+  color: var(--error-dark);
+  transition: all 300ms;
+}
+.errorForm::placeholder {
+  color: var(--error-dark);
+  transition: all 300ms;
+}
+
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+  .CBFormMainFieldCallBackText {
+    height: 100px;
+  }
+}
+@media(max-width: 991px) {
+
+}
+@media(max-width: 767px) {
+  .CBBlock {
+    max-width: 510px;
+    width: 100%;
+    padding: 30px 45px;
+  }
+  .CBFormChekcboxBlockWrap {
+    width: auto;
+  }
+}
+@media(max-width: 575px) {
+  .CBBlock {
+    padding: 20px;
+  }
+  .CBFormTitle {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .CBFormChekcboxBlockWrap {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

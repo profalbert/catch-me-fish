@@ -1,0 +1,310 @@
+.Header {
+  background-color: var(--white);
+}
+
+
+.headerWrap {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 50px 0 41px 0;
+  grid-template-columns: 295px max-content 1fr;
+}
+
+
+.headerLogoBlock {
+  width: 190px;
+  height: 133px;
+}
+.headerLogoBlock img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.headerSearcheInput {
+  width: 570px;
+  height: 48px;
+  padding: 0px 25px;
+  border-radius: 23.5px;
+  border: solid 2px var(--middle-2);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--middle-2);
+}
+.headerSearcheInput::placeholder {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--middle-2);
+}
+
+
+.headerSearcheButton {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  background-color: var(--accent-2);
+  border: 2px solid var(--accent-2);
+  margin-left: 10px;
+}
+
+
+.headerSearcheBlock {
+  display: flex;
+  margin-top: 13px;
+  position: relative;
+}
+
+.headerSearcheListGoodsBlockWrap {
+  position: absolute;
+  width: 570px;
+  background-color: var(--light-2);
+  top: calc(100% + 5px);
+  padding: 30px 25px;
+  z-index: 10;
+}
+.headerSearcheListGoodsBlock {
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+}
+.headerSearcheListGoodsImgBlock {
+  border: 1px solid var(--darkest-2);
+  min-width: 52px;
+  min-height: 52px;
+  width: 52px;
+  height: 52px;
+}
+.headerSearcheListGoodsImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.headerSearcheListGoodsTitleBlock {
+  margin-left: 15px;
+}
+.headerSearcheListGoodsTitle {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-2);
+}
+
+
+
+.headerNavBlock ul{
+  display: flex;
+  grid-auto-flow: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.headerNavBlock ul li{
+  margin-right: 20px;
+}
+.headerNavBlock ul li:last-child{
+  margin-right: 0px;
+}
+.headerNavBlock ul li a{
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--dark-2);
+  text-decoration: none;
+}
+.headerNavBlockWrap {
+  margin-top: 40px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.headerNavBlockActiveItem {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.headerNavBlock ul li a {
+  position: relative;
+}
+.headerNavBlock ul li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  border-radius: 6px;
+  background-color: var(--accent-2);
+  width: 0px;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headerNavBlockActiveItem::after {
+  transition: all 0.3s ease-in-out;
+  width: calc(100% + 10px) !important;
+}
+
+
+
+.headerBuscketButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 26px;
+  background-color: var(--middle-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  position: relative;
+}
+.headerBuscketButtonCountGoods {
+  position: absolute;
+  min-width: 22px;
+  height: 22px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  transform: translate(75%, -75%);
+  background-color: var(--accent-2);
+  color: var(--dark-2);
+  border-radius: 50%;
+  padding: 0px 5px;
+}
+
+
+.headerContactsNumbers a{
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-2);
+  text-decoration: none;
+}
+.headerContactsNumbers{
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-2);
+  text-decoration: none;
+}
+.headerContactsNumbers div:first-child {
+  margin-bottom: 10px;
+}
+.headerContactsText {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-2);
+  margin-top: 10px;
+}
+.headerContactsTextmini {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-2); 
+}
+.headerContactsBlockWrap {
+  display: grid;
+  justify-content: end;
+}
+.headerContactsBlock {
+  display: inline-block;
+  text-align: right;
+}
+.headerContactsContentWrap {
+  display: flex;
+  align-items: center;
+  grid-auto-flow: column;
+  position: relative;
+}
+.headerContactsIcon {
+  left: -65px;
+  position: absolute;
+}
+
+
+
+
+
+@media(max-width: 1439px) {
+  .headerSearcheInput {
+    width: 470px;
+  }
+  .headerNavBlock ul{
+    max-width: 470px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerNavBlock ul li{
+    margin: 7px 20px;
+  }
+  .headerNavBlock ul li:last-child{
+    margin-right: 20px;
+  }
+  .headerSearcheListGoodsBlockWrap {
+    width: 470px;
+  }
+}
+@media(max-width: 1199px) {
+  .headerWrap {
+    grid-template-columns: 250px max-content 1fr;
+  }
+  .headerSearcheInput {
+    width: 370px;
+  }
+  .headerNavBlock ul{
+    max-width: 370px;
+  }
+  .headerNavBlock ul li{
+    margin: 7px 10px;
+  }
+  .headerNavBlock ul li:last-child{
+    margin-right: 10px;
+  }
+  .headerSearcheBlock {
+    margin-top: 0px;
+  }
+  .headerNavBlockWrap {
+    margin-top: 25px;
+  }
+  .headerContactsIcon {
+    display: none;
+  }
+  .headerSearcheListGoodsBlockWrap {
+    width: 370px;
+  }
+}
+@media(min-width: 992px) {  /* для hover эффектов */
+  .headerSearcheButton:hover {
+    transition: all 0.3s ease-in-out;
+    background: var(--dark-2);
+    border: 2px solid var(--accent-2);
+  }
+  .headerContactsNumbers div a:hover {
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+  }
+  .headerNavBlock ul li a:hover::after {
+    transition: all 0.3s ease-in-out;
+    width: calc(100% + 10px);
+  }
+}
+@media(max-width: 991px) {
+  .Header {
+    display: none;
+  }
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 575px) {
+
+}

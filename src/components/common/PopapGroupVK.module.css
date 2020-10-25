@@ -1,0 +1,156 @@
+.PGVKBlockWrap {
+  z-index: -35;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  transform: translateY(calc(100% + 100px));
+}
+.PGVKBlockWrap::before {
+  position: absolute;
+  content: '';
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-2);
+  opacity: .8;
+  z-index: 36;
+}
+.PGVKBlockWrapOpen {
+  transition: all 0.75s ease-in-out;
+  opacity: 1;
+  z-index: 35;
+  transform: translateY(calc(0px));
+}
+.PGVKBlockWrapClose {
+  transition: all 0.75s ease-in-out;
+  opacity: 0;
+  z-index: -35;
+  transform: translateY(calc(100% + 100px));
+}
+
+.PGVKBlock {
+  background-color: var(--white);
+  display: grid;
+  justify-items: center;
+  padding: 35px 55px;
+  position: relative;
+  border-radius: 5px;
+  z-index: -37;
+  border: 1px solid var(--dark-2);
+}
+.PGVKBlockOpen {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  z-index: 37;
+}
+.PGVKBlockClose {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -37;
+}
+
+
+.PGVKBlockCloseWrap {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.PGVKBlockCloseButton {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+
+.PGVKBlockText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  max-width: 300px;
+  text-align: center;
+}
+
+.PGVKBlockButtonWrap {
+  margin-top: 20px;
+}
+
+.PGVKBlockButtonLink {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+}
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+
+}
+@media(max-width: 991px) {
+
+}
+@media(max-width: 767px) {
+  .PGVKBlockWrap {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(calc(0px));
+  }
+  .PGVKBlockWrap::before {
+    display: block;
+  }
+  .PGVKBlockWrapOpen {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 35;
+    transform: translateY(calc(0px));
+  }
+  .PGVKBlockWrapClose {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -35;
+    transform: translateY(calc(0px));
+  }
+}
+@media(max-width: 575px) {
+  .PGVKBlock {
+    max-width: 290px;
+    padding: 40px;
+  }
+  .PGVKBlockText {
+    max-width: 100%;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+

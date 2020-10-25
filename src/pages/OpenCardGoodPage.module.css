@@ -1,0 +1,243 @@
+.OpenCardGoodPage {
+  background-color: var(--darkest-2);
+  padding: 50px 0px 65px 0px;
+}
+
+.OCGContent {
+  margin-left: 190px;
+}
+
+.OCGActiveGoodBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 165px;
+}
+.OCGActiveGoodImgWrap {
+  max-width: 419px;
+  position: relative;
+}
+.OCGActiveGoodImg {
+  height: 310px;
+}
+.OCGActiveGoodImg__none {
+  background-color: var(--middle-2);
+}
+.OCGActiveGoodImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.OCGActiveGoodImg img{
+  display: block;
+}
+.OCGActiveGoodTitle {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+  margin-bottom: 22px;
+}
+
+
+.OCGActiveGoodDescr {
+  min-width: 315px;
+  max-width: 400px;
+  margin-left: 85px;
+}
+.OCGActiveGoodDescrTitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.OCGActiveGoodDescrText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+
+.OCGAGDPriceBlock {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr max-content;
+  margin-bottom: 15px;
+}
+.OCGAGDPriceBlock:last-child {
+  margin-bottom: 0px;
+}
+.OCGAGDPriceTextWrap {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.OCGAGDPriceText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+}
+.OCGAGDPriceMinitext {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.OCGAGDPriceTextprice {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.OCGAGDPriceButton {
+  width: 55px;
+  height: 38px;
+  border-radius: 39px;
+  background-color: var(--accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  position: relative;
+}
+.OCGAGDPriceButton__active {
+  background-color: var(--middle-2);
+}
+.OCGAGDPriceButtonCountThisGood {
+  position: absolute;
+  min-width: 22px;
+  height: 22px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  transform: translate(75%, -75%);
+  background-color: var(--accent-2);
+  color: var(--dark-2);
+  border-radius: 50%;
+  padding: 0px 5px;
+}
+
+
+.OCGActiveGoodSliderImgWrap {
+  transform: translate(0, 100%);
+  bottom: -35px;
+  position: absolute;
+  width: 419px;
+}
+.OCGActiveGoodSliderImg {
+  width: 80px;
+  height: 80px;
+  border: solid 3px transparent;
+  cursor: pointer;
+}
+.OCGActiveGoodSliderImg__none {
+  width: 80px;
+  height: 80px;
+  border: solid 3px transparent;
+  background-color: var(--middle-2);
+}
+.OCGActiveGoodSliderImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.OCGSimilarGoodsTitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--light-2);
+  margin-bottom: 20px;
+}
+.OCGSimilarGoodsContainer {
+  max-width: 1050px;
+}
+
+
+
+
+@media(max-width: 1439px) {
+  .OCGSimilarGoodsContainer {
+    max-width: 920px;
+  }
+}
+@media(max-width: 1199px) {
+  .OCGContent {
+    margin-left: 0px;
+  }
+}
+@media(max-width: 991px) {
+  .OCGSimilarGoodsContainer {
+    max-width: 690px;
+  }
+  .OCGActiveGoodBlock {
+    display: grid;
+    margin-bottom: 50px;
+  }
+  .OCGActiveGoodDescr {
+    margin-left: 0px;
+    order: 3;
+    margin-top: 35px;
+  }
+  .OCGActiveGoodSliderImgWrap {
+    transform: translate(0, 0);
+    bottom: 0px;
+    position: static;
+    margin-top: 35px;
+    order: 2;
+  }
+}
+@media(max-width: 767px) {
+  .OCGSimilarGoodsContainer {
+    max-width: 510px;
+  }
+}
+@media(max-width: 575px) {
+  .OCGActiveGoodImgWrap {
+    max-width: calc(100vw - 30px);
+  }
+  .OCGSimilarGoodsContainer {
+    max-width: 225px;
+  }
+  .OpenCardGoodPage {
+    padding: 25px 0px 60px 0px;
+  }
+  .OCGActiveGoodDescr {
+    min-width: auto;
+    width: 100%;
+    max-width: 350px;
+  }
+  .OCGActiveGoodImg {
+    height: calc(100vw - 30vw);
+  }
+  .OCGAGDPriceTextprice {
+    font-size: 16px;
+  }
+  .OCGActiveGoodSliderImgWrap {
+    max-width: calc(100vw - 30px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,329 @@
+.HeaderMobile {
+  padding: 25px 0px;
+  display: none;
+  min-height: 90px;
+}
+.headerMobileWrap {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  position: relative;
+}
+
+.HMMenuButton {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: transparent;
+}
+.HMMenuButtonSpan {
+  width: 24px;
+  height: 2px;
+  border-radius: 21px;
+  background-color: var(--accent-2);
+}
+.HMMenuButtonSpan1 {
+  margin-bottom: 9px;
+}
+.HMMenuButtonSpan2 {
+  margin-bottom: 9px;
+}
+
+
+.HMButtonsWrap {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+}
+.HMButton {
+  background-color: transparent;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-right: 33px;
+  z-index: 2;
+  height: max-content;
+  width: max-content;
+}
+.HMButton:last-child {
+  margin-right: 0px;
+}
+.HMButtonSearche {
+  margin-left: -80px;
+  margin-right: 0px;
+}
+
+
+.HMSearcheInput {
+  width: 350px;
+  height: 48px;
+  padding: 0px 25px;
+  border-radius: 23.5px;
+  border: solid 2px var(--light-2);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--darkest-2);
+  color: var(--light-2);
+  padding-right: 55px;
+}
+.HMSearcheInput::placeholder {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+}
+.HMSearcheBlock {
+  display: flex;
+  position: relative;
+  margin-right: 33px;
+}
+.HMSearcheListGoodsBlockWrap {
+  position: absolute;
+  width: 350px;
+  background-color: var(--light-2);
+  top: calc(100% + 5px);
+  padding: 30px 25px;
+  z-index: 10;
+}
+.HMSearcheListGoodsBlock {
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+}
+.HMSearcheListGoodsImgBlock {
+  border: 1px solid var(--darkest-2);
+  min-width: 52px;
+  min-height: 52px;
+  width: 52px;
+  height: 52px;
+}
+.HMSearcheListGoodsImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.HMSearcheListGoodsTitleBlock {
+  margin-left: 15px;
+}
+.HMSearcheListGoodsTitle {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-2);
+}
+
+
+
+.HMBuscketButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.HMBuscketButtonCountGoods {
+  position: absolute;
+  min-width: 22px;
+  height: 22px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  transform: translate(45%, -55%);
+  background-color: var(--darkest-2);
+  color: var(--light-2);
+  border-radius: 50%;
+  padding: 0px 5px;
+  border: 1px solid var(--accent-2);
+}
+
+
+
+.HMMenuBlockWrap {
+  position: fixed;
+  z-index: -15;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.HMMenuBlockWrapClose {
+  transition: all 0.3s ease-in-out;
+  z-index: -15;
+  opacity: 0;
+}
+.HMMenuBlockWrapOpen {
+  transition: all 0.3s ease-in-out;
+  z-index: 15;
+  opacity: 1;
+}
+.HMMenuBlockWrap::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-2);
+  opacity: .8;
+  z-index: 16;
+}
+.HMMenuContent {
+  position: relative;
+  z-index: 17;
+  width: max-content;
+  top: 25px;
+  left: 0px;
+  transform: translateY(calc(-100% - 100px));
+}
+.HMMenuContentClose {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(calc(-100% - 100px));
+}
+.HMMenuContentOpen {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(calc(0px));
+}
+.HMMenuContent ul{
+  list-style: none;
+  margin: 0px;
+  padding: 70px;
+  display: grid;
+  background-color: var(--light-2);
+}
+.HMMenuContent ul li{
+  margin-bottom: 40px;
+}
+.HMMenuContent ul li:last-child{
+  margin-bottom: 0px;
+}
+.HMMenuContent ul li a{
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--dark-2);
+  text-decoration: none;
+}
+.HMNavBlockActiveItem {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.HMNavBlockActiveItem::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  border-radius: 6px;
+  background-color: var(--accent-2);
+  width: calc(100% + 10px);
+  bottom: -3px;
+  left: -5px;
+}
+
+
+
+.HMBlockCloseWrap {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.HMBlockCloseButton {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+
+}
+@media(max-width: 991px) {
+  .HeaderMobile {
+    display: block;
+  }
+}
+@media(max-width: 767px) { 
+  .HMSearcheInput {
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .HMSearcheInput::placeholder {
+    font-size: 14px;
+  }
+  .HMSearcheListGoodsBlockWrap {
+    width: 250px;
+  }
+  .HeaderMobile {
+    padding: 25px 0px;
+  }
+  .HMMenuContent {
+    top: 25px;
+  }
+}
+@media(max-width: 575px) {
+  .HMSearcheBlock {
+    margin-right: 0px;
+  } 
+  .HeaderMobile {
+    display: grid;
+    align-items: center;
+  }
+  .HMSearcheInput {
+    width: calc(100vw - 80px);
+    display: none;
+    transform: scaleX(0);
+  }
+  .HMSearcheInputOpen {
+    transition: all 0.3s ease-in-out;
+    display: block;   
+    animation: HMSearcheInputOpen 0.3s ease-in-out 1;
+    transform: scaleX(1);
+  }  
+  @keyframes HMSearcheInputOpen {
+    0% { transform: scaleX(0); }   
+    100% { transform: scaleX(1); }
+  }
+  .HMButtonSearche {
+    margin-left: 0px;
+    margin-right: 33px;    
+  }
+  .HMButtonSearcheOpen {
+    margin-left: -45px;
+  }
+  .HMMenuContent ul {
+    padding: 55px;
+  }
+  .HMMenuContent ul li {
+    margin-bottom: 30px;
+  }
+  .HMSearcheListGoodsBlockWrap {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+

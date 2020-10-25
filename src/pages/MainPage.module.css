@@ -1,0 +1,452 @@
+
+
+.HuntingGoods {
+  background: var(--darkest-2) url(../assets/img/HuntingGoods.jpg) center right no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.HuntingGoods::after {
+  content: '';
+  display: block;
+  top: 0;
+  right: 550px;
+  bottom: 0;
+  width: 500px;
+  z-index: -1;
+  position: absolute;
+  background-image: linear-gradient(to right, var(--darkest-2), rgba(13, 16, 17, 0));
+}
+.HuntingGoodsWrapContent {
+  height: 345px;
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+}
+.HuntingGoodsContent {
+  max-width: 380px;
+}
+.HuntingGoodsTitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-2);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.HuntingGoodsText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.HuntingGoodsButton{
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--darkest-2);
+}
+
+
+
+.CallBack {
+  background: var(--darkest-2);
+}
+.CallBackWrapContent {
+  height: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 190px;
+}
+.CallBackContent {
+  max-width: 380px;
+}
+.CallBackTitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-2);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.CallBackText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.CallBackButton {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+}
+
+
+
+.CallBackSlider {
+  max-width: 490px;
+}
+.CallBackSliderBlock {
+  display: flex;
+  align-items: center;
+}
+.CallBackSliderContent {
+  max-width: 280px;
+  margin-left: 20px;
+}
+.CallBackSliderImg {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+}
+.CallBackSliderImg img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.CallBackSliderName {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-2);
+  margin-bottom: 12px;
+}
+.CallBackSliderDate {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+  margin-bottom: 23px;
+}
+.CallBackSliderText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+}
+
+
+
+
+
+.SpecialOffer {
+  background: var(--darkest-2)
+}
+.SpecialOfferWrapContent {
+  margin-left: 190px;
+  max-width: 1050px;
+}
+.SpecialOfferBlock {
+  background: var(--darkest-2) url(../assets/img/specialOffer.jpg) center right no-repeat;
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  height: 230px;
+}
+.SpecialOfferBlock::after {
+  content: '';
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background-image: linear-gradient(to right, var(--darkest-2), rgba(13, 16, 17, 0), var(--darkest-2));
+}
+.SpecialOfferBlockContent {
+  max-width: 220px;
+  text-align: center;
+  margin-top: 45px;
+}
+.SpecialOfferTitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.SpecialOfferText {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);;
+}
+
+
+
+.AboutUs {
+  background: var(--darkest-2) url(../assets/img/aboutUs.jpg) center right no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.AboutUs::after {
+  content: '';
+  display: block;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  width: 1385px;
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(90deg, var(--darkest-2) 5%,rgba(13, 16, 17, 0) 100%);
+}
+.AboutUsWrapContent {
+  height: 345px;
+  display: grid;
+  align-items: center;
+  margin-left: 190px;
+}
+.AboutUsBlock {
+  max-width: 380px;
+}
+.AboutUsTitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-2);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.AboutUsText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+}
+
+
+
+.MobileNewBlockMenuListWrap {
+  margin-bottom: 40px;
+  display: none;
+}
+.MobileNewBlockMenuList {
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px 0 rgba(77, 77, 82, 0.2);
+  background-color: var(--light-2);
+  padding: 35px 50px 45px 65px;
+}
+.MobileNewBlockMenuListLink a{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+.MobileNewBlockMenuListLink:last-child a{
+  margin-bottom: 0px;
+}
+.MobileNewBlockMenuListText {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-2);
+}
+.MobileNewBlockMenuListImg {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+@media(max-width: 1439px) {
+  .SpecialOfferWrapContent {
+    max-width: 920px;
+  }
+}
+@media(max-width: 1199px) {
+  .HuntingGoodsWrapContent {
+    margin-left: 0px;
+  }
+  .CallBackWrapContent {
+    height: 345px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+  .SpecialOfferWrapContent {
+    margin-left: 0px;
+  }
+  .AboutUsWrapContent {
+    height: 345px;
+    display: grid;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .SpecialOfferWrapContent {
+    max-width: 930px;
+  }
+  .HuntingGoods::after {
+    right: 350px;
+    width: 700px;
+  }
+  .AboutUs::after {
+    width: 1200px;
+  }
+}
+@media(max-width: 991px) {
+  .CallBackWrapContent {
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px 50px 0px;
+  }
+  .CallBackSlider {
+    margin-top: 45px;
+  }
+  .CallBackSliderImg {
+    width: 140px;
+    height: 140px;
+  }
+  .CallBackSlider {
+    max-width: 440px;
+  }
+  .SpecialOfferWrapContent {
+    max-width: 690px;
+  }
+  .MainPage {
+    display: grid;
+  }
+  .HuntingGoods {
+    order: 1;
+  }
+  .SpecialOffer {
+    order: 2;
+    padding: 40px 0px 0px 0px;
+  }
+  .AboutUs {
+    order: 4;
+  }
+  .CallBack {
+    order: 5;
+  }
+  .MobileNewBlockMenuListWrap {
+    display: block;
+    order: 3;
+  }
+}
+@media(max-width: 767px) {
+  .HuntingGoods::after {
+    right: 0px;
+    width: 770px;
+    background-image: linear-gradient(to right, var(--darkest-2), rgba(13, 16, 17, 0));
+  }
+  .HuntingGoodsWrapContent {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .HuntingGoodsContent {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .SpecialOfferWrapContent {
+    max-width: 510px;
+  }
+  .AboutUs::after {
+    right: 0px;
+    width: 770px;
+    background-image: linear-gradient(to right, var(--darkest-2), rgba(13, 16, 17, 0));
+  }
+  .AboutUsWrapContent {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .AboutUsBlock {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .CallBackWrapContent {
+    justify-items: center;
+    justify-content: center;
+  }
+  .CallBackContent {
+    justify-self: center;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media(max-width: 575px) {
+  .HuntingGoods::after {
+    width: 580px;
+  }
+  .AboutUs::after {
+    width: 580px;
+  }
+  .SpecialOfferWrapContent {
+    max-width: calc(100vw - 30px);
+    margin: 0 auto;
+  }
+  .SpecialOfferBlockContent {
+    margin-top: 0px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .SpecialOfferTitle {
+    font-size: 18px;
+  }
+  .SpecialOfferText {
+    font-size: 14px;
+  }
+  .CallBackSlider {
+    max-width: 370px;
+    width: calc(100vw - 30px)
+  }
+  .CallBackSliderImg {
+    min-width: 70px;
+    height: 70px;
+    width: 70px;
+  }
+  .CallBackSliderName {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .CallBackSliderDate {
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+  .CallBackSlidertext {
+    font-size: 12px;
+  }
+}
+

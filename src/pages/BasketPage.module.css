@@ -1,0 +1,637 @@
+
+
+
+.BusketPage {
+  background-color: var(--darkest-2);
+  padding-top: 60px;
+  padding-bottom: 115px;
+}
+
+.BPTitle {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.BPPurchaseSteps {
+  display: grid;
+  justify-content: center;
+  margin-top: 30px;
+}
+.BPPurchaseStepsBlock {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+.BPPurchaseStepsBlockNumber {
+  width: 50px;
+  height: 50px;
+  border: solid 2px var(--accent-2);
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-2);
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.BPPurchaseStepsBlockNumber__active {
+  transition: all 0.3s ease-in-out;
+  color: var(--darkest-2);
+  background-color: var(--accent-2);
+}
+.BPPurchaseStepsBlockLine {
+  width: 57px;
+  height: 2px;
+  background-color: var(--accent-2);
+}
+
+
+
+/* 1 вариант (шаг) на странице */
+
+.BPBusketWrap {
+  max-width: 840px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.BPBusketColumns {
+  display: grid;
+  grid-template-columns: 395px 170px 160px 90px 25px;
+  font-family: "Montserrat";
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+  margin-bottom: 23px;
+}
+
+
+
+.BPBusketGoodBlock {
+  display: grid;
+  grid-template-columns: 395px 170px 160px 90px 25px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.BPBusketGoodBlock:last-child {
+  margin-bottom: 0px;
+}
+.BPBusketMobileGoodBlock {
+  display: none;
+}
+.BPBusketGoodVoidTitle {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--light-2);
+  margin: 100px 0px;
+  text-align: center;
+}
+
+.BPBusketGoodImgAndText {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+}
+.BPBusketGoodImg {
+  width: 85px;
+  height: 85px;
+}
+.BPBusketGoodImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.BPBusketGoodTextWrap {
+  max-width: 200px;
+  margin-left: 20px;
+}
+.BPBusketGoodMainText {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.BPBusketGoodDopText {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+
+
+
+
+.BPBusketGoodCal {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  width: max-content;
+}
+.BPBusketGoodCalcButton button{
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-2);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.BPBusketGoodCalcButton button span{
+  width: 12px;
+  height: 2px;
+  background-color: var(--darkest-2);
+  display: block;
+  position: relative;
+}
+.BPBusketGoodCalcButtonPlus button span::after{
+  content: '';
+  position: absolute;
+  transform: rotate(90deg);
+  width: 12px;
+  height: 2px;
+  background-color: var(--darkest-2);
+  display: block;
+}
+.BPBusketGoodCalcAmount {
+  width: 45px;
+  height: 30px;
+  border: solid 1px var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 0px 10px;
+}
+
+
+
+.BPBusketGoodPrice {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+  margin-right: 15px;
+}
+.BPBusketGoodAll {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+}
+
+.BPBusketGoodDeleteGood {
+  display: grid;
+  justify-content: end;
+  border-radius: 50%;
+}
+.BPBusketGoodDeleteGoodButton {
+  background-color: transparent;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.BPBusketSumWrap {
+  display: grid;
+  justify-content: end;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.BPBusketSum {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+
+
+.BPBusketButtonsBlock {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+}
+.BPBusketButtonsClearBasket {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-2);
+  text-decoration: underline;
+  background-color: transparent;
+}
+.BPBusketButtonsContinue {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-left: 25px;
+}
+
+
+
+/* 2 вариант (шаг) на странице */
+
+.BPFormBlock {
+  max-width: 720px;
+  margin: 0px auto;
+  margin-top: 35px;
+}
+
+.BPFormRadioButtonsBlockWrap {
+  display: grid;
+  align-items: center;
+}
+.BPFormRadioButtonsBlock {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+}
+.BPFormRadioButtonsBlock:last-child {
+  margin-top: -12px;
+}
+.BPFormRadioButton {
+  margin-left: -11px;
+}
+.BPFormRadioButtonText {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+
+
+.BPFormMainFieldBlockWrap {
+  margin-top: 29px;
+}
+.BPFormMainField {
+  border: solid 1px var(--light-2);
+  background-color: transparent;
+  padding: 0px;
+  padding: 0px 22px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+}
+.BPFormMainField::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--light-2);
+}
+.BPFormMainFieldFIO {
+  grid-area: FIO;
+}
+.BPFormMainFieldPhone {
+  grid-area: Phone;
+}
+.BPFormMainFieldEmail {
+  grid-area: Email;
+}
+.BPFormMainFieldAdress {
+  grid-area: Adress;
+  padding: 15px 22px;
+}
+.BPFormMainFieldBlock {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 47px);
+  grid-template-areas: 'FIO FIO FIO FIO FIO FIO FIO'
+                       'Phone Phone Phone Adress Adress Adress Adress'
+                       'Email Email Email Adress Adress Adress Adress';
+}
+
+
+.BPFormChekcboxAndAttentionWrap {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  min-height: 55px;
+  grid-template-areas: 'CBW CBW CBW ABW ABW ABW ABW';
+}
+
+.BPFormAttentionBlockWrap {
+  grid-area: ABW;
+}
+
+.BPFormChekcboxBlockWrap {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+  max-width: 100%;
+  grid-area: CBW;
+  height: max-content;
+  margin-top: 6px;
+}
+.BPFormChekcboxBlock {
+  margin-left: -11px;
+}
+.BPFormChekcboxText {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+
+
+
+.BPFormAttentionBlock {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--light-2);
+  margin-top: 15px;
+}
+.BPFormAttentionBlockTitle {
+  font-weight: bold;
+  color: var(--accent-2);
+}
+.BPFormAttentionBlockLink {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--light-2);
+  color: var(--accent-2);
+}
+
+
+.BPFormCommentBlokWrap {
+  margin-top: 15px;
+}
+.BPFormCommentBlok {
+  display: grid;
+}
+.BPFormCommentBlokTextarea {
+  padding: 15px 22px;
+  height: 100px;
+}
+
+
+.BPFormButtonsBlockWrap {
+  display: grid;
+  justify-content: end;
+  margin-top: 35px;
+}
+.BPFormButtonsBlock {
+  display: grid;
+  grid-auto-flow: column;
+}
+.BPFormButtonBack {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  border: solid 2px var(--accent-2);
+  background-color: var(--darkest-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.BPFormButtonContinue {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-left: 25px;
+}
+
+.errorForm {
+  border-color: var(--error);
+  color: var(--error);
+  transition: all 300ms;
+}
+.errorForm::placeholder {
+  color: var(--error);
+  transition: all 300ms;
+}
+
+
+
+/* 3 вариант (шаг) на странице */
+
+.BPConfirmationOrderWrap {
+  margin-top: 35px;
+}
+.BPConfirmationOrder {
+  display: grid;
+  justify-items: center;
+}
+
+.BPConfirmationOrderText {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-2);
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.BPConfirmationOrderButton {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkest-2);
+  text-decoration: none;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+  .BusketPage {
+    padding: 60px 0px 65px 0px;
+  }
+}
+@media(min-width: 992px) {  /* для hover эффектов */
+  .BPBusketButtonsClearBasket:hover {
+    transition: all 0.3s ease-in-out;
+    color: var(--error-dark);
+  }
+}
+@media(max-width: 991px) {
+  .BPBusketColumns {
+    display: none;
+  }
+  .BPBusketMobileGoodBlock {
+    display: block;
+    min-width: 400px;
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+  .BPBusketGoodBlock {
+    display: none;
+  }
+  .BPBusketGoodImgAndText {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .BPBusketGoodImg {
+    margin-right: 45px;
+  }
+  .BPBusketGoodTextWrap {
+    margin-left: 0px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+  .BPBusketGoodDeleteGoodButton {
+    width: 25px;
+    height: 25px;
+  }
+  .BPBusketGoodPriceWrap {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .BPBusketGoodCalcWrap {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .BPBusketGoodAllWrap {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .BPBusketMobileGoodContentWrap {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: max-content 1fr;
+  }
+  .BPBusketGood {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .BPBusketSumWrap {
+    margin-top: 10px;
+  }
+  .BPBusketWrap {
+    margin-top: 55px;
+  }
+  .BusketPage {
+    padding: 40px 0px 60px 0px;
+  }
+  .BPBusketGoodVoidTitle {
+    margin: 60px 0px;
+  }
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 575px) {
+  .BusketPage {
+    padding: 25px 0px 60px 0px;
+  }
+  .BPBusketMobileGoodBlock {
+    min-width: 0px;
+    width: 100%;
+  }
+  .BPBusketMobileGoodContentWrap {
+    grid-auto-flow: row;
+    grid-template-columns: none;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .BPBusketGoodImg {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .BPBusketMobileGoodBlock {
+    margin-bottom: 60px;
+  }
+  .BPBusketWrap {
+    margin-top: 50px;
+  }
+
+  .BPFormRadioButtonsBlock {
+    max-width: 100%;
+  }
+  .BPFormRadioButtonsBlock {
+    max-width: 100%;
+  }
+  .BPFormMainFieldBlock {
+    grid-gap: 10px;
+    grid-template-columns: none;
+    grid-template-rows: repeat(5, 47px);
+    grid-template-areas:
+        'FIO'
+        'Phone'
+        'Email'
+        'Adress'
+        'Adress';
+  }
+  .BPFormChekcboxAndAttentionWrap {
+    grid-gap: 5px;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, max-content);
+    min-height: 0px;
+    grid-template-areas: 'ABW'
+                         'CBW';
+  }
+  .BPFormButtonBack {
+    width: 130px;
+  }
+  .BPFormButtonContinue {
+    width: 130px;
+  }
+  .BPBusketGoodVoidTitle {
+    margin: 40px 0px;
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+

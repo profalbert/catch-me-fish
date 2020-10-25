@@ -1,0 +1,337 @@
+.AllGoodsWrapContentWrap {
+  padding-top: 100px;
+}
+
+.AllGoodsWrap {
+  background-color: var(--darkest-2);
+}
+
+
+.AllGoodsMobileTitleBlockWrap {
+  display: none;
+}
+
+.AllGoodsMobileOpenCategoryBlockWrap {
+  display: none;
+}
+
+.AGSortGoodsWrap {
+  display: grid;
+  justify-items: end;
+}
+.AGSortGoodsMobileWrap {
+  justify-items: start;
+  position: absolute;
+  right: 0px;
+  top: -55px;
+}
+.AGSortGoods {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-items: end;
+}
+.AGSortGoodsTitle {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: var(--light-2);
+}
+.AGSortGoodsSelect {
+  appearance: none;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: var(--light-2);
+  background-color: var(--darkest-2);
+  border: none;
+  padding: 5px;
+  border: 1px solid var(--light-2);
+  padding-right: 25px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.AGSortGoodsSelectWrap {
+  position: relative;
+  margin-left: 5px;
+  display: grid;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+}
+
+
+
+
+.AGMenuAndContainerWrap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content auto;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.AGMenuWrap {
+  width: 295px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px 0 rgba(77, 77, 82, 0.2);
+  background-color: var(--light-2);
+  padding: 35px 20px 17px 35px;
+  margin-right: 20px;
+  height: max-content;
+}
+
+.AGMenuMCTitleWrap {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.AGMenuMCTitle {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-2);
+  max-width: 190px;
+  width: max-content;
+  line-height: 16px;
+}
+.AGMenuMCTitleLink {
+  text-decoration: none;
+  color: var(--dark-2);
+  position: relative;
+  display: inline-block;
+}
+.AGMenuMCIcon {
+  width: 24px;
+  height: 15px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.AGMenuMCButtonUp {
+  transition: 300ms all;
+  transform: rotate(-90deg);
+}
+.AGMenuMCButtonDown {
+  transition: 300ms all;
+  transform: rotate(0deg);
+}
+.AGMenuMCIcon button{
+  width: 24px;
+  height: 15px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: transparent;
+}
+.AGMenuMCIcon button img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.AGMenuDCList {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: var(--dark-2);
+  margin-bottom: 18px;
+}
+.AGMenuDCListTitle{
+  line-height: 15px;
+  margin-bottom: 14px;
+  max-width: 190px;
+  width: max-content;
+}
+.AGMenuDCListTitleLink{
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: var(--dark-2);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.AGMenuDCListTitleLink::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  border-radius: 6px;
+  background-color: var(--accent-2);
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.AGMenuDCListTitleLink__active::after{
+  transition: all 0.3s ease-in-out;
+  width: calc(100% + 10px) !important;
+}
+.AGMenuDCListTitle:last-child{
+  margin-bottom: 0px;
+}
+
+
+.AGContainerGoods {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(auto-fill, 210px);
+  justify-content: space-between;
+  grid-row-gap: 27px;
+}
+
+
+.AGContainerGoodsPaginationWrap {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+
+
+
+@media(max-width: 1439px) {
+  .AGContainerGoods {
+    justify-content: start;
+    grid-gap: 27px;
+  }
+}
+@media(max-width: 1199px) {
+  .AGMenuAndContainerWrap {
+    margin-bottom: 65px;
+  }
+}
+@media(min-width: 992px) {  /* для hover эффектов */
+  .AGMenuDCListTitleLink:hover::after{
+    transition: all 0.3s ease-in-out;
+    width: calc(100% + 10px);
+  }
+}
+@media(max-width: 991px) {
+  .AllGoodsWrapContentWrap {
+    padding-top: 40px;
+  }
+  .AGMenuAndContainerWrap {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: none;
+  }
+  .AGMenuWrap {
+    justify-self: center;
+    box-shadow: none;
+    background-color: var(--darkest-2);
+    padding: 0px 20px 17px 35px;
+    margin-right: 0px;
+    width: 495px;
+    height: max-content;
+  }
+  .AGMenuMCTitle {
+    max-width: 290px;
+  }
+  .AGMenuMCTitleLink {
+    color: var(--accent-2);
+  }
+  .AGMenuDCListTitle{
+    max-width: 290px;
+  }
+  .AGMenuDCListTitleLink {
+    color: var(--light-2);
+  }
+  .AGSortGoodsMobileWrap {
+    display: grid;
+    position: static;
+    top: 0px;
+  }
+  .AGSortGoodsWrap {
+    display: none;
+  }
+  .AllGoodsMobileTitleBlockWrap {
+    display: block;
+  }
+  .AllGoodsMobileTitleBlock {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .AllGoodsMobileTitle {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-2);
+  }
+  .AllGoodsMobileOpenCategoryBlockWrap {
+    display: block;
+  }
+  .AllGoodsMobileOpenCategoryBlock {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .AllGoodsMobileOpenCategoryButton {
+    padding: 0px 20px;
+    background-color: var(--darkest-2);
+    color: var(--light-2);
+    border: 2px solid var(--accent-2);
+    font-family: "Montserrat";
+    font-size: 10px;
+    color: var(--light-2);
+    border-radius: 28px;
+    height: 35px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .AGMenuMobileWrap {
+    display: none;
+  }
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 575px) {
+  .AGMenuWrap {
+    padding: 0px 0px 17px 10%;
+    width: 100%;
+  }
+  .AGMenuMCTitle {
+    max-width: calc(100% - 50px);
+  }
+  .AGMenuDCListTitle{
+    max-width: calc(100% - 50px);
+  }
+  .AGContainerGoods {
+    grid-gap: 10px;
+  }
+  .AllGoodsWrapContentWrap {
+    padding-top: 5px;
+  }
+  .AGMenuAndContainerWrap {
+    margin-bottom: 60px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

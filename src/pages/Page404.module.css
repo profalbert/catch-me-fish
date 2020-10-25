@@ -1,0 +1,92 @@
+.Page404BlockWrap {
+  background-color: var(--darkest-2);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 115px;
+}
+
+.Page404BlockMainText {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--light-2);
+}
+.Page404Block404 {
+  font-family: "Montserrat";
+  font-size: 250px;
+  font-weight: 600;
+  color: var(--light-2);
+  line-height: 180px;
+  margin-top: 30px;
+}
+.Page404BlockButtonBlock {
+  margin-top: 70px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.Page404BlockButton {
+  width: 187px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: var(--accent-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--darkest-2);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+@media(max-width: 1439px) {
+
+}
+@media(max-width: 1199px) {
+  .Page404BlockWrap {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media(max-width: 991px) {
+
+}
+@media(max-width: 767px) {
+  .Page404Block404 {
+    font-size: 180px;
+    line-height: 130px;
+  }
+  .Page404BlockMainText {
+    font-size: 31px;
+  }
+  .Page404BlockButtonBlock  {
+    margin-top: 50px;
+  }
+}
+@media(max-width: 575px) {
+  .Page404Block404 {
+    font-size: 130px;
+    line-height: 100px;
+    margin-top: 20px;
+  }
+  .Page404BlockMainText {
+    font-size: 22px;
+  }
+  .Page404BlockButtonBlock {
+    margin-top: 40px;
+  }
+  .Page404BlockWrap {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+}
+
+
+
+
+
+
+

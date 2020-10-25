@@ -1,38 +1,297 @@
+:root {
+  --white: #ffffff;
+  --darkest-2: #0d1011;
+  --dark-2: #272b2b;
+  --accent-2: #f3c256;
+  --middle-2: #64777a;
+  --light-2: #f5f5f5;
+  --black: #000000;
+  --error: #f44336;
+  --error-dark: #d32f2f;
+}
+
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  padding: 0px;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  display: grid;
+  align-content: space-between;
+  background-color: var(--darkest-2);
+}
+
+.MainContainerWrap {
+  max-width: 1270px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+  display: grid;
+}
+
+
+.appPreloaderWrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appPreloader {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.headerSearcheButton .MuiSvgIcon-root {
+  color: var(--darkest-2);
+}
+
+
+
+.closeButton .MuiSvgIcon-root {
+  color: var(--darkest-2);
+}
+
+
+
+.hoverButtonsMainClass {
+  background-color: var(--accent-2);
+  color: var(--darkest-2);
+  border: 2px solid var(--accent-2);
+}
+
+
+
+
+
+/* стилизация селекта */
+
+.__select {
+  position: relative;
+  max-width: 230px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+.__select[data-state="active"] .__select__title::before {
+  transform: translate(-3px, -50%) rotate(-45deg);
+}
+.__select[data-state="active"] .__select__title::after {
+  transform: translate(2px, -50%) rotate(45deg);
+}
+.__select[data-state="active"] .__select__content {
+  opacity: 1;
+  z-index: 5;
+}
+.__select[data-state="active"] .__select__label + .__select__input + .__select__label {
+  max-height: 40px;
+  border-top-width: 1px;
+}
+.__select__title {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px 25px 5px 5px;
+  border: solid 1px var(--light-2);
+  cursor: pointer;
+  color: var(--light-2);
+  border-radius: 5px 5px 0px 0px;
+  width: 150px;
+  font-family: "Montserrat";
+}
+.__select__title::before, .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  display: block;
+  width: 10px;
+  height: 3px;
+  transition: all 0.3s ease-out;
+  background-color: var(--accent-2);
+  transform: translate(-3px, -50%) rotate(45deg);
+}
+.__select__title::after {
+  transform: translate(2px, -50%) rotate(-45deg);
+}
+.__select__content {
+  font-family: "Montserrat";
+  position: absolute;
+  top: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--white);
+  border: 1px solid var(--middle-2);
+  border-radius: 0px 0px 5px 5px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: -2;
+  width: max-content;
+  max-width: 300px;
+  width: 150px;
+}
+.__select__input {
+  display: none;
+}
+.__select__input:checked + label {
+  background-color: #f3c256;
+}
+.__select__label {
+  font-size: 13px;
+  padding: 5px 25px 5px 5px;
+  cursor: pointer;
+  color: var(--darkest-2);
+  width: 100%;
+  font-family: "Montserrat";  
+}
+.__select__labelWrap {
+  overflow: hidden;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: solid 1px var(--middle-2);
+}
+.__select__labelWrap:last-child {
+  border-bottom: none;
+  border-radius: 0px 0px 5px 5px;
+}
+.__select__label + input + .__select__label {
+  border-top: 0 solid #c7ccd1 60;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* стилизация всех слайдеров */
+.CallBackSlider .swiper-container-horizontal {
+  padding-bottom: 20px;
+}
+.CallBackSlider .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0px;
+}
+.CallBackSlider .swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  border: solid 1px var(--light-2);
+  background-color: transparent;
+  border-radius: 50%;
+}
+.CallBackSlider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--light-2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+
+.SpecialOfferWrapContent .swiper-container-horizontal > .swiper-pagination-bullets {
+  z-index: -2;
+}
+.SpecialOfferWrapContent .swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  border: solid 1px var(--light-2);
+  background-color: transparent;
+  border-radius: 50%;
+}
+.SpecialOfferWrapContent .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--light-2);
+}
+
+
+
+
+.OCGActiveGoodImgWrapSlider .swiper-button-next:after, .swiper-button-prev:after {
+  color: var(--accent-2);
+}
+
+
+
+
+.OCGActiveGoodSliderImgBlock .swiper-slide-thumb-active .OCGActiveGoodSliderImg{
+  border: solid 3px var(--accent-2);
+}
+
+
+
+
+/* медиа запросы (адаптив) */
+
+@media(max-width: 1439px) {
+  .MainContainerWrap {
+    max-width: 1140px;
   }
 }
+@media(max-width: 1199px) {
+  .MainContainerWrap {
+    max-width: 960px;
+  }
+}
+@media(min-width: 992px) {  /* для hover эффектов */
+  .hoverButtonsMainClass:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--dark-2);
+    color: var(--light-2);
+    border: 2px solid var(--accent-2);
+  }
+  .headerSearcheButton:hover .MuiSvgIcon-root {
+    transition: all 0.3s ease-in-out;
+    color: var(--light-2);
+  }
+  .closeButton:hover .MuiSvgIcon-root {
+    transition: all 0.3s ease-in-out;
+    color: var(--error-dark) !important;
+  }
+}
+@media(max-width: 991px) {
+  .MainContainerWrap {
+    max-width: 720px;
+  }
+  .SpecialOfferWrapContent .swiper-container-horizontal > .swiper-pagination-bullets {
+    z-index: 2;
+    bottom: 30px;
+  }
+  .SpecialOfferWrapContent .swiper-container-horizontal {
+    padding-bottom: 65px;
+  }
+
+  .CallBackSlider .swiper-container-horizontal {
+    padding-bottom: 40px;
+  }
+}
+@media(max-width: 767px) {
+  .MainContainerWrap {
+    max-width: 540px;
+  }
+}
+@media(max-width: 575px) {
+  .MainContainerWrap {
+    max-width: 100%;
+  }
+}
+

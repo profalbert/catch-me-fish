@@ -1,0 +1,182 @@
+.ContactsDeliveryPage {
+  background-color: var(--darkest-2);
+}
+.CDBlockWrap {
+  display: flex;
+  padding: 105px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.CDBlock {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.CDImg {
+  width: 500px;
+  height: 580px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.CDImg img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.CDContent {
+  font-family: "Montserrat";
+  color: var(--light-2);
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  height: 100%;
+}
+.CDDeliveryTitle {
+  line-height: 15px;
+}
+.CDTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.CDDeliveryText {
+  font-size: 16px;
+  font-weight: 500;
+}
+.CDPaymentItems {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.CDPaymentMinitext {
+  font-size: 12px;
+  font-weight: 500;
+}
+.CDPaymentTerm {
+  font-size: 16px;
+  margin-top: 25px;
+}
+.CDContactsBlock {
+  font-size: 18px;
+  font-weight: 600;
+}
+.CDContactsBlock a{
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: var(--light-2);
+  text-decoration: none;
+}
+.CDContactsBlock a:last-child{
+  text-decoration: underline;
+  line-height: 26px;
+  display: block;
+}
+.CDContactsBlock div{
+  margin-bottom: 10px;
+}
+.CDContactsBlock div:last-child{
+  margin-bottom: 0px;
+}
+
+
+
+
+@media(max-width: 1439px) {
+  .CDBlockWrap {
+    justify-content: start;
+  }
+  .CDContent {
+    max-width: 650px;
+  }
+  .CDDeliveryTitle {
+    line-height: 14px;
+  }
+  .CDTitle {
+    font-size: 17px;
+  }
+  .CDDeliveryText {
+    font-size: 15px;
+  }
+  .CDPaymentItems {
+    font-size: 15px;
+  }
+  .CDPaymentMinitext {
+    font-size: 12px;
+  }
+  .CDPaymentTerm {
+    font-size: 15px;
+  }
+  .CDContactsBlock {
+    font-size: 17px;
+  }
+  .CDContactsBlock a{
+    font-size: 17px;
+  }
+  .CDContactsBlock a:last-child{
+    text-decoration: underline;
+    line-height: 24px;
+    display: block;
+  }
+}
+@media(max-width: 1199px) {
+  .CDBlockWrap {
+    padding: 65px 0px;
+  }
+  .CDImg {
+    margin-left: -200px;
+  }
+}
+@media(min-width: 992px) {  /* для hover эффектов */
+  .CDContactsBlock div a:hover {
+    text-decoration: underline;
+  }
+}
+@media(max-width: 991px) {
+  .CDBlockWrap {
+    padding: 40px 15px 0px 15px;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+  }
+  .CDImg {
+    margin-left: 0px;
+    width: 100%;
+    order: 2;
+    margin-top: 65px;
+  }
+  .CDBlock {
+    grid-auto-flow: row;
+  }
+  .CDContent {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .CDTitle {
+    margin-top: 40px;
+  }
+  .CDDeliveryTitle {
+    margin-top: 0px;
+  }
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 575px) {
+  .CDBlockWrap {
+    padding: 25px 15px 0px 15px;
+  }
+  .CDImg {
+    height: 360px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
+}
+
+
+
