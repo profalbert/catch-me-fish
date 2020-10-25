@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/catchmefish/static/css/main.9373b821.chunk.css",
+    "main.js": "/catchmefish/static/js/main.2d18a5b9.chunk.js",
+    "main.js.map": "/catchmefish/static/js/main.2d18a5b9.chunk.js.map",
+    "runtime-main.js": "/catchmefish/static/js/runtime-main.f46106b7.js",
+    "runtime-main.js.map": "/catchmefish/static/js/runtime-main.f46106b7.js.map",
+    "static/css/2.1d0e61fc.chunk.css": "/catchmefish/static/css/2.1d0e61fc.chunk.css",
+    "static/js/2.b9c90a74.chunk.js": "/catchmefish/static/js/2.b9c90a74.chunk.js",
+    "static/js/2.b9c90a74.chunk.js.map": "/catchmefish/static/js/2.b9c90a74.chunk.js.map",
+    "index.html": "/catchmefish/index.html",
+    "precache-manifest.95ab032cd3f8f57ea03aebeba27e0459.js": "/catchmefish/precache-manifest.95ab032cd3f8f57ea03aebeba27e0459.js",
+    "service-worker.js": "/catchmefish/service-worker.js",
+    "static/css/2.1d0e61fc.chunk.css.map": "/catchmefish/static/css/2.1d0e61fc.chunk.css.map",
+    "static/css/main.9373b821.chunk.css.map": "/catchmefish/static/css/main.9373b821.chunk.css.map",
+    "static/js/2.b9c90a74.chunk.js.LICENSE.txt": "/catchmefish/static/js/2.b9c90a74.chunk.js.LICENSE.txt",
+    "static/media/ContactsDelivery.jpg": "/catchmefish/static/media/ContactsDelivery.b27e24b0.jpg",
+    "static/media/MainPage.module.css": "/catchmefish/static/media/specialOffer.0554fffc.jpg",
+    "static/media/PhotoForCallback.jpg": "/catchmefish/static/media/PhotoForCallback.394b87a7.jpg",
+    "static/media/fm-vk-icon.svg": "/catchmefish/static/media/fm-vk-icon.09d92b4e.svg",
+    "static/media/hm-basket-icon.svg": "/catchmefish/static/media/hm-basket-icon.043dfd1f.svg",
+    "static/media/hm-contacts-icon.svg": "/catchmefish/static/media/hm-contacts-icon.da74469b.svg",
+    "static/media/hm-phone-icon.svg": "/catchmefish/static/media/hm-phone-icon.f131bb1f.svg",
+    "static/media/hm-searche-icon.svg": "/catchmefish/static/media/hm-searche-icon.20e8ab55.svg",
+    "static/media/iconList.svg": "/catchmefish/static/media/iconList.b11f7d22.svg",
+    "static/media/logo.svg": "/catchmefish/static/media/logo.e8d05f71.svg",
+    "static/media/logoWhite.svg": "/catchmefish/static/media/logoWhite.81fb68dc.svg",
+    "static/media/photoCardProduct.jpg": "/catchmefish/static/media/photoCardProduct.274b82a1.jpg",
+    "static/media/photoOpenGood.jpg": "/catchmefish/static/media/photoOpenGood.01d8d6fc.jpg",
+    "static/media/preloader.svg": "/catchmefish/static/media/preloader.d88595d5.svg",
+    "static/media/shop-icon.svg": "/catchmefish/static/media/shop-icon.78d49954.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f46106b7.js",
+    "static/css/2.1d0e61fc.chunk.css",
+    "static/js/2.b9c90a74.chunk.js",
+    "static/css/main.9373b821.chunk.css",
+    "static/js/main.2d18a5b9.chunk.js"
+  ]
+}
